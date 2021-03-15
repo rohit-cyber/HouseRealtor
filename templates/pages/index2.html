@@ -1,0 +1,5 @@
+<ul>
+    {% for post in latest_listings%}
+      <li><a href="{% url 'listing' post.id %}">{{post.title}}</a></li>
+    {% endfor %}
+</ul>
